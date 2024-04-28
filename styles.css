@@ -2,3 +2,25 @@ body{
     color: azure;
     background-color: rgb(44, 44, 44);
 }
+
+.container{
+    display: flex;
+}
+
+.boton{
+    background-color: black;
+    color: aliceblue;
+    width: 130px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 5px groove rgb(0, 255, 255);
+    border-radius: 15px;
+}
+
+.boton:hover{
+    background-color: black;
+    color: rgb(2, 128, 238);
+}
