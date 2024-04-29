@@ -17,10 +17,19 @@ body{
 
 .perfil{
     position: fixed;
+    width: 400px;
     margin: 30px;
     background-color: rgba(245,234,230,255);
     color: black;
     padding: 50px 0px 0px 0px;
+}
+
+.datos-personales{
+    text-align: left;
+    margin-left: 100px;
+}
+.datos-perfil{
+    margin: 0px 80px;
 }
 
 .img{
