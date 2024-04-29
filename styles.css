@@ -4,32 +4,34 @@ body{
 
 .base{
     display: flex;
+    width: 100%;
     height: 350px;
     text-align: center;
     background-color: rgba(70,73,80,255);
 }
 
 .nombre{
-    margin-top: 150px;
-    margin-left: 500px;
+    margin-top: 120px;
+    margin-left: 750px;
     color: azure;
 }
 
 .perfil{
-    position: fixed;
+    position: absolute;
     width: 400px;
-    margin: 30px;
-    background-color: rgba(245,234,230,255);
+    height: 837px;
+    margin: 30px 45px;
+    background-color: rgba(208,219,221,255);
     color: black;
     padding: 50px 0px 0px 0px;
 }
 
 .datos-personales{
     text-align: left;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 .datos-perfil{
-    margin: 0px 80px;
+    margin: 0px 70px;
 }
 
 .img{
@@ -39,8 +41,22 @@ body{
     border-radius: 170px;
 }
 
+p{
+    font-size: 19px;
+}
+
+.cursos{
+    position: absolute;
+    margin: 320px 500px;
+    width: 1300px;
+    height: 600px;
+    background-color: rgba(208,219,221,255);
+    font-size: larger;
+}
+
 .botones{
     display: flex;
+    margin-left: 500px;
 }
 
 .btn{
@@ -56,7 +72,7 @@ body{
     border-radius: 15px;
 }
 
-.boton:hover{
+.btn:hover{
     background-color: black;
     color: rgb(2, 128, 238);
 }
