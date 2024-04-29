@@ -1,13 +1,40 @@
 body{
-    color: azure;
-    background-color: rgb(44, 44, 44);
+    margin: 0px 0px 0px 0px;
 }
 
-.container{
+.base{
+    display: flex;
+    height: 350px;
+    text-align: center;
+    background-color: rgba(70,73,80,255);
+}
+
+.nombre{
+    margin-top: 150px;
+    margin-left: 500px;
+    color: azure;
+}
+
+.perfil{
+    position: fixed;
+    margin: 30px;
+    background-color: rgba(245,234,230,255);
+    color: black;
+    padding: 50px 0px 0px 0px;
+}
+
+.img{
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 170px;
+}
+
+.botones{
     display: flex;
 }
 
-.boton{
+.btn{
     background-color: black;
     color: aliceblue;
     width: 130px;
