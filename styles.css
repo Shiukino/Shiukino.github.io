@@ -90,21 +90,24 @@ body{
     font-size: 20px;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     margin: 10px;
     padding: 5px 10px;
-    border: 5px groove rgb(0, 255, 255);
+    border: 3px solid rgb(0, 255, 255);
     border-radius: 15px;
 }
 
 .btn:hover{
-    color: rgb(2, 128, 238);
+    color: #83c5f7;
 }
 
 .base{
-    padding: 90px 0;
+    padding: 80px 0;
     background-color: rgba(208,219,221,255);
     text-align: center;
+}
+
+.base h3{
+    margin: 30px 0;
 }
 
 .header{
@@ -119,13 +122,12 @@ body{
 
 .nav{
     display: flex;
-    max-width: 992px;
     margin: 0 auto;
 }
 
 .title{
     margin: 0;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     padding: 0 40px;
     line-height: 70px;
@@ -142,7 +144,6 @@ body{
     font-size: 18px;
     margin: 0 10px;
     line-height: 40px;
-    text-transform: uppercase;
     width: max-content;
 }
 
@@ -158,26 +159,68 @@ body{
     transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+    .base{
+        padding: 100px 0;
+    }
+
+    .header{
+        height: 100px;
+    }
+    
+    .title{
+        font-size: 25px;
+        padding: 0 30px;
+        line-height: 85px;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .nav-menu-item{
+        line-height: 33px;
+        width: 130px;
+        border: 1px solid;
+        border-radius: 7px;
+        background-color: #034574;
+        margin: 7px 0;
+    }
+    
+    .nav-menu-link:hover{
+        background: none;
+        color: #83c5f7;
+    }
+}
+
 .contenedor{
-    max-width: 1200px;
+    max-width: 1570px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    gap: 50px;
 }
 
 .contenedor .tarjeta{
     width: 355px;
-    height: 570px;
+    height: 630px;
+    border: 2px solid;
     border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
 .contenedor .tarjeta img{
     width: 355px;
     height: 470px;
+}
+
+.contenedor .tarjeta p{
+    font-size: 18px;
+    padding: 0px 20px;
 }
