@@ -114,7 +114,6 @@ body{
     background-color: #0769e9;
     height: 80px;
     position: fixed;
-    display: flex;
     width: 100%;
     top: 0;
     left: 0;
@@ -122,6 +121,8 @@ body{
 
 .nav{
     display: flex;
+    justify-content: space-between;
+    max-width: 992px;
     margin: 0 auto;
 }
 
