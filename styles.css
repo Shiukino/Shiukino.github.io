@@ -1,5 +1,13 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.03em;
     background-color: rgb(0, 160, 255);
 }
 
@@ -10,7 +18,7 @@ body{
     background-color: rgba(70,73,80,255);
 }
 
-.nombre{
+.titulo .nombre{
     text-align: center;
     font-style: italic;
     font-size: x-large;
@@ -30,39 +38,40 @@ body{
     padding: 50px 0px 0px 0px;
 }
 
-.datos-personales{
-    text-align: left;
-    margin-left: 90px;
-}
-.datos-perfil{
-    margin: 0px 70px;
-}
-
-.img-perfil{
+.perfil .img-perfil{
     margin: 10px;
     width: 250px;
     height: 250px;
     border-radius: 170px;
 }
 
-p{
+.perfil .datos-personales{
+    text-align: left;
+    margin-left: 70px;
+}
+
+.perfil .datos-perfil{
+    margin: 0px 53px;
+}
+
+.perfil .datos-perfil p{
     font-size: 19px;
 }
 
 .estudios{
     position: absolute;
     margin: 310px 500px;
-    width: 1300px;
+    width: 1330px;
     height: 610px;
     background-color: rgba(208,219,221,255);
     font-size: large;
 }
 
-.izq-title{
+.estudios .izq-title{
     margin: 0px 0px 0px 250px;
 }
 
-.izq-text{
+.estudios .izq-text{
     margin: 0px 0px 0px 200px;
 }
 
@@ -90,8 +99,50 @@ p{
     color: rgb(2, 128, 238);
 }
 
-.base1{
-    background-color: rgba(208,219,221,255);
-    margin: 30px 45px;
+.base{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+}
+
+.title{
     text-align: center;
+    font-size: 40px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor .tarjeta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor .tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .tarjeta img{
+    width: 330px;
+    height: 220px;
+}
+
+.contenedor .tarjeta p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
 }
